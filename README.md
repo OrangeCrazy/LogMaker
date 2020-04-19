@@ -1,6 +1,18 @@
 # LogMaker
 ## 随机日志生成
 
+### Maven打包命令
+
+```shell
+mvn clean package
+```
+
+运行
+
+```shell
+java -jar xxxx.jar [****] [****]
+```
+
 ### 传参说明
 
 #### 不传参
@@ -30,12 +42,6 @@ com.orange.App.main
 ```shell
  cd /export/logs/log_maker
 ```
-
-
-
-
-
-
 
 ### Linux命令
 
