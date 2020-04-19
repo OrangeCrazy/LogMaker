@@ -31,6 +31,12 @@ com.orange.App.main
  cd /export/logs/log_maker
 ```
 
+
+
+
+
+
+
 ### Linux命令
 
 #### Hadoop启动

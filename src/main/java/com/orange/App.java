@@ -108,7 +108,7 @@ public class App {
         String p3 = getPercentage();
         String p4 = getPercentage();
 
-        String log = "[" + logId + "]," + newTime + "," + hostNameAndIPStr + "," +
+        String log = "[" + logId + "]" + newTime + "|" + hostNameAndIPStr + "," +
                 hardDevices[0] + "used," + getUsedByTotalAndPercentage(p1, cpuTotalStr) + "," + hardDevices[0] + "_percentage," + p1 + "," +
                 hardDevices[1] + "used," + getUsedByTotalAndPercentage(p2, memTotalStr) + "," + hardDevices[1] + "_percentage," + p2 + "," +
                 hardDevices[2] + "used," + getUsedByTotalAndPercentage(p3, hddTotalStr) + "," + hardDevices[2] + "_percentage," + p3 + "," +
