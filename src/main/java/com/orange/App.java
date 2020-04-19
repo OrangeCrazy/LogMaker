@@ -95,7 +95,6 @@ public class App {
         return String.valueOf(totalArr[random.nextInt(totalArr.length)]);
     }
 
-
     //生成日志方法
     public static String generateLog() {
         String hostNameAndIPStr = sampleHost();
@@ -128,7 +127,7 @@ public class App {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         //dest生成日志的路径
-        String dest = "logMaker/logs.txt";
+        String dest = "src/logMaker/logs.txt";
         File file = new File(dest);
 
         int num, sleepTime;
