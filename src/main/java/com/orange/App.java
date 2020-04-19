@@ -134,7 +134,7 @@ public class App {
         if (args.length == 0) {
             //默认生成日志条数
             num = 100;
-            //默认每10秒生成一次
+            //默认每5秒生成一次
             sleepTime = 5;
         } else if (args.length == 1) {
             //传一个参数
