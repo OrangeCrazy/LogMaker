@@ -127,7 +127,7 @@ public class App {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         //dest生成日志的路径
-        String dest = "src/logMaker/logs.txt";
+        String dest = "src/logMaker/log/logs.txt";
         File file = new File(dest);
 
         int num, sleepTime;
