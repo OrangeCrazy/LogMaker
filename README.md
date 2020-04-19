@@ -100,3 +100,55 @@ beeline> !connect jdbc:hive2://node03:10000
 
 ![image-20200419164659404](src\logMaker\README\image-20200419164659404.png)
 
+#### Kafka
+
+##### 启动Kafka
+
+```shell
+cd /export/servers/kafka/bin 
+
+./kafka-server-start.sh /export/servers/kafka/config/server.properties 1>/dev/null 2>&1 &
+```
+
+##### 创建一个topic
+
+```shell
+./kafka-topics.sh --create --zookeeper node01:2181 --replication-factor 1 --partitions 1 --topic order
+```
+
+##### 使用Kafka自带一个命令行客户端启动一个生产者，生产数据
+
+```shell
+./kafka-topics.sh --create --zookeeper node01:2181 --replication-factor 1 --partitions 1 --topic order
+```
+
+##### 使用Kafka自带一个命令行客户端启动一个消费者，消费数据
+
+```shell
+./kafka-console-consumer.sh --bootstrap-server node01:9092  --topic order
+该消费语句，只能获取最新的数据，要想历史数据，需要添加选项--from-beginning
+
+如：bin/kafka-console-consumer.sh --bootstrap-server node01:9092 --from-beginning --topic order
+```
+
+##### 查看有哪些topic
+
+```shell
+./kafka-topics.sh --list --zookeeper node01:2181
+```
+
+##### 查看某一个具体的Topic的详细信息
+
+```shell
+./kafka-topics.sh --describe --topic order --zookeeper node01:2181
+```
+
+##### 删除topic
+
+```shell
+bin/kafka-topics.sh --delete --topic order --zookeeper node01:2181
+
+注意：彻底删除一个topic，需要在server.properties中配置delete.topic.enable=true，否则只是标记删除
+配置完成之后，需要重启kafka服务。
+```
+

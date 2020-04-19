@@ -43,7 +43,6 @@ public class App {
 
     //传入总数和百分比获取当前占用量
     private static String[] hardDeviceTotal = {"cores", "MGB", "HGB", "Mbps"};
-
     public static String getUsedByTotalAndPercentage(String use, String total) {
         BigDecimal totalDecimal = new BigDecimal(total);
         BigDecimal useDecimal = new BigDecimal(use);
@@ -118,7 +117,6 @@ public class App {
                 hardDevices[1] + "_total," + memTotalStr + "," +
                 hardDevices[2] + "_total," + hddTotalStr + "," +
                 hardDevices[3] + "_total," + netTotalStr;
-
         System.out.println(log);
         return log;
     }
@@ -138,12 +136,12 @@ public class App {
             sleepTime = 5;
         } else if (args.length == 1) {
             //传一个参数
-            num = Integer.valueOf(args[0]);
+            num = Integer.parseInt(args[0]);
             sleepTime = 10;
         } else {
             //传两个参数
-            num = Integer.valueOf(args[0]);
-            sleepTime = Integer.valueOf(args[1]);
+            num = Integer.parseInt(args[0]);
+            sleepTime = Integer.parseInt(args[1]);
         }
 
         while (true) {
