@@ -14,5 +14,8 @@ public class LogDetail {
      * 暂缺
      *
      */
+    private Integer id;
+
+    private String logId;
 
 }
