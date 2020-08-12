@@ -3,7 +3,6 @@
   */
 package bean;
 
-import org.codehaus.jackson.map.ser.std.ScalarSerializerBase;
 
 import java.io.Serializable;
 

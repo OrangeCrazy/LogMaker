@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class App {
+public class LogMakerApp {
     //主机名--IP
     public static String[] hostNameAndIP = {
             "HQCNKMS01W,10.1.8.153",
@@ -125,7 +125,7 @@ public class App {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         //dest生成日志的路径
-        String dest = "src/logMaker/log/logs.txt";
+        String dest = "log/logs.txt";
         File file = new File(dest);
 
         int num, sleepTime;

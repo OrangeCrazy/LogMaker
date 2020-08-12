@@ -110,7 +110,7 @@ bin/beeline
 beeline> !connect jdbc:hive2://node03:10000
 ```
 
-![image-20200419164659404](src\logMaker\README\image-20200419164659404.png)
+![image-20200419164659404](README\image-20200419164659404.png)
 
 #### Kafka
 
