@@ -1,3 +1,5 @@
+package jsonRead;
+
 import bean.Data;
 import bean.JsonRootBean;
 import com.alibaba.fastjson.JSON;

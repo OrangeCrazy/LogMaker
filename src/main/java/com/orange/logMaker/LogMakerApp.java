@@ -1,4 +1,4 @@
-package com.orange;
+package com.orange.logMaker;
 
 import org.springframework.util.DigestUtils;
 
